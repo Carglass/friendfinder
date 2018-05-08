@@ -13,7 +13,4 @@ app.listen(process.env.PORT || PORT, function() {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get("/", htmlRoutes.getHome);
-app.get("/survey", htmlRoutes.getSurvey);
-app.get("/style.css", htmlRoutes.getStyle);
-app.get("/main.js", htmlRoutes.getScript);
+require("./app/routing/htmlRoutes")(app);

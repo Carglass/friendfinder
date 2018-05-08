@@ -2,12 +2,15 @@ let express = require("express");
 let bodyParser = require("body-parser");
 let path = require("path");
 
-let getHome = (req, res) => {
-  res.sendFile(path.join(__dirname, "./../public/home.html"));
-};
+module.exports = function(app) {
+  app.get("/api/friends", function(req, res) {
+    return res.json(friends);
+    // connect to mysql, do query
+  });
 
-let getSurvey = (req, res) => {
-  res.sendFile(path.join(__dirname, "./../public/survey.html"));
-};
+  app.post("/api/friends", function(req, res) {
+    var newFriend = req.body;
 
-module.exports = { getHome, getSurvey };
+    console.log(newFriend);
+  });
+};
