@@ -2,7 +2,7 @@ let express = require("express");
 let bodyParser = require("body-parser");
 let path = require("path");
 
-module.exports = function(app) {
+module.exports = app => {
   app.get("/api/friends", function(req, res) {
     return res.json(friends);
     // connect to mysql, do query
