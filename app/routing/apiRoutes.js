@@ -30,10 +30,13 @@ module.exports = app => {
   });
 
   app.post("/api/friends", function(req, res) {
+    // get the new entry from the post
     var newFriend = req.body;
-    console.log(determineBFF(friends, newFriend).name);
-    console.log(newFriend);
+    // determine who is his/her best match
+    var BFF = determineBFF(friends, newFriend);
+    // add the new entry to the friends array
     friends.push(newFriend);
-    return res.send({ status: "ok" });
+    // return the best match to the client
+    return res.json(BFF);
   });
 };
