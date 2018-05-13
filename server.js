@@ -12,5 +12,8 @@ app.listen(process.env.PORT || PORT, function() {
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+// allowing the app to access the css and js files from public folder
+app.use(express.static(path.join(__dirname, "app/public")));
 
 require("./app/routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
     crossorigin="anonymous"></script>
@@ -28,7 +28,7 @@
       <!-- TODO: add the link to photo image -->
     </div>
   </div>
-  <div>
+  <div class="questionBlock" id="q1">
     <div class="questionTitle">Question 1</div>
     <div class="question">You love to travel</div>
     <input type="radio" id="travel1" name="travel" value="1">
@@ -46,99 +46,171 @@
     <input type="radio" id="travel5" name="travel" value="5">
     <label for="travel5">5 (Strongly Agree)</label>
   </div>
-  <div>
+  <div class="questionBlock" id="q2">
     <div class="questionTitle">Question 2</div>
     <div class="question">You love burgers</div>
-    <input type="radio" id="travel1" name="travel" value="1">
-    <label for="travel1">1 (Strongly Disagree)</label>
+    <input type="radio" id="burgers1" name="burgers" value="1">
+    <label for="burgers1">1 (Strongly Disagree)</label>
 
-    <input type="radio" id="travel2" name="travel" value="2">
-    <label for="travel2">2</label>
+    <input type="radio" id="burgers2" name="burgers" value="2">
+    <label for="burgers2">2</label>
 
-    <input type="radio" id="travel3" name="travel" value="3">
-    <label for="travel3">3</label>
+    <input type="radio" id="burgers3" name="burgers" value="3">
+    <label for="burgers3">3</label>
 
-    <input type="radio" id="travel4" name="travel" value="4">
-    <label for="travel4">4</label>
-    
-    <input type="radio" id="travel5" name="travel" value="5">
-    <label for="travel5">5 (Strongly Agree)</label>
+    <input type="radio" id="burgers4" name="burgers" value="4">
+    <label for="burgers4">4</label>
+
+    <input type="radio" id="burgers5" name="burgers" value="5">
+    <label for="burgers5">5 (Strongly Agree)</label>
+  </div>
+  <div class="questionBlock" id="q3">
+    <div class="questionTitle">Question 3</div>
+    <div class="question">You are a dork (&copy; Scott 2018)</div>
+    <input type="radio" id="dork1" name="dork" value="1">
+    <label for="dork1">1 (Strongly Disagree)</label>
+
+    <input type="radio" id="dork2" name="dork" value="2">
+    <label for="dork2">2</label>
+
+    <input type="radio" id="dork3" name="dork" value="3">
+    <label for="dork3">3</label>
+
+    <input type="radio" id="dork4" name="dork" value="4">
+    <label for="dork4">4</label>
+
+    <input type="radio" id="dork5" name="dork" value="5">
+    <label for="dork5">5 (Strongly Agree)</label>
+  </div>
+  <div class="questionBlock" id="q4">
+    <div class="questionTitle">Question 4</div>
+    <div class="question">You love pets</div>
+    <input type="radio" id="pets1" name="pets" value="1">
+    <label for="pets1">1 (Strongly Disagree)</label>
+
+    <input type="radio" id="pets2" name="pets" value="2">
+    <label for="pets2">2</label>
+
+    <input type="radio" id="pets3" name="pets" value="3">
+    <label for="pets3">3</label>
+
+    <input type="radio" id="pets4" name="pets" value="4">
+    <label for="pets4">4</label>
+
+    <input type="radio" id="pets5" name="pets" value="5">
+    <label for="pets5">5 (Strongly Agree)</label>
+  </div>
+  <div class="questionBlock" id="q5">
+    <div class="questionTitle">Question 5</div>
+    <div class="question">You love Science Fiction</div>
+    <input type="radio" id="sf1" name="sf" value="1">
+    <label for="sf1">1 (Strongly Disagree)</label>
+
+    <input type="radio" id="sf2" name="sf" value="2">
+    <label for="sf2">2</label>
+
+    <input type="radio" id="sf3" name="sf" value="3">
+    <label for="sf3">3</label>
+
+    <input type="radio" id="sf4" name="sf" value="4">
+    <label for="sf4">4</label>
+
+    <input type="radio" id="sf5" name="sf" value="5">
+    <label for="sf5">5 (Strongly Agree)</label>
+  </div>
+  <div class="questionBlock" id="q6">
+    <div class="questionTitle">Question 6</div>
+    <div class="question">You enjoy a good debate</div>
+    <input type="radio" id="debate1" name="debate" value="1">
+    <label for="debate1">1 (Strongly Disagree)</label>
+
+    <input type="radio" id="debate2" name="debate" value="2">
+    <label for="debate2">2</label>
+
+    <input type="radio" id="debate3" name="debate" value="3">
+    <label for="debate3">3</label>
+
+    <input type="radio" id="debate4" name="debate" value="4">
+    <label for="debate4">4</label>
+
+    <input type="radio" id="debate5" name="debate" value="5">
+    <label for="debate5">5 (Strongly Agree)</label>
+  </div>
+  <div class="questionBlock" id="q7">
+    <div class="questionTitle">Question 7</div>
+    <div class="question">You are a Pizza person</div>
+    <input type="radio" id="pizza1" name="pizza" value="1">
+    <label for="pizza1">1 (Strongly Disagree)</label>
+
+    <input type="radio" id="pizza2" name="pizza" value="2">
+    <label for="pizza2">2</label>
+
+    <input type="radio" id="pizza3" name="pizza" value="3">
+    <label for="pizza3">3</label>
+
+    <input type="radio" id="pizza4" name="pizza" value="4">
+    <label for="pizza4">4</label>
+
+    <input type="radio" id="pizza5" name="pizza" value="5">
+    <label for="pizza5">5 (Strongly Agree)</label>
+  </div>
+  <div class="questionBlock" id="q8">
+    <div class="questionTitle">Question 8</div>
+    <div class="question">You love sports (not watching it, doing it)</div>
+    <input type="radio" id="sports1" name="sports" value="1">
+    <label for="sports1">1 (Strongly Disagree)</label>
+
+    <input type="radio" id="sports2" name="sports" value="2">
+    <label for="sports2">2</label>
+
+    <input type="radio" id="sports3" name="sports" value="3">
+    <label for="sports3">3</label>
+
+    <input type="radio" id="sports4" name="sports" value="4">
+    <label for="sports4">4</label>
+
+    <input type="radio" id="sports5" name="sports" value="5">
+    <label for="sports5">5 (Strongly Agree)</label>
+  </div>
+  <div class="questionBlock" id="q9">
+    <div class="questionTitle">Question 9</div>
+    <div class="question">You are a daredevil</div>
+    <input type="radio" id="daredevil1" name="daredevil" value="1">
+    <label for="daredevil1">1 (Strongly Disagree)</label>
+
+    <input type="radio" id="daredevil2" name="daredevil" value="2">
+    <label for="daredevil2">2</label>
+
+    <input type="radio" id="daredevil3" name="daredevil" value="3">
+    <label for="daredevil3">3</label>
+
+    <input type="radio" id="daredevil4" name="daredevil" value="4">
+    <label for="daredevil4">4</label>
+
+    <input type="radio" id="daredevil5" name="daredevil" value="5">
+    <label for="daredevil5">5 (Strongly Agree)</label>
+  </div>
+  <div class="questionBlock" id="q10">
+    <div class="questionTitle">Question 10</div>
+    <div class="question">You love books</div>
+    <input type="radio" id="books1" name="books" value="1">
+    <label for="books1">1 (Strongly Disagree)</label>
+
+    <input type="radio" id="books2" name="books" value="2">
+    <label for="books2">2</label>
+
+    <input type="radio" id="books3" name="books" value="3">
+    <label for="books3">3</label>
+
+    <input type="radio" id="books4" name="books" value="4">
+    <label for="books4">4</label>
+
+    <input type="radio" id="books5" name="books" value="5">
+    <label for="books5">5 (Strongly Agree)</label>
   </div>
   <div>
-      <div class="questionTitle">Question 3</div>
-      <div class="question">You are a dork (&copy; Scott 2018)</div>
-      <input type="radio" id="travel1" name="travel" value="1">
-      <label for="travel1">1 (Strongly Disagree)</label>
-  
-      <input type="radio" id="travel2" name="travel" value="2">
-      <label for="travel2">2</label>
-  
-      <input type="radio" id="travel3" name="travel" value="3">
-      <label for="travel3">3</label>
-  
-      <input type="radio" id="travel4" name="travel" value="4">
-      <label for="travel4">4</label>
-      
-      <input type="radio" id="travel5" name="travel" value="5">
-      <label for="travel5">5 (Strongly Agree)</label>
-    </div>
-    <div>
-        <div class="questionTitle">Question 1</div>
-        <div class="question">You love to travel</div>
-        <input type="radio" id="travel1" name="travel" value="1">
-        <label for="travel1">1 (Strongly Disagree)</label>
-    
-        <input type="radio" id="travel2" name="travel" value="2">
-        <label for="travel2">2</label>
-    
-        <input type="radio" id="travel3" name="travel" value="3">
-        <label for="travel3">3</label>
-    
-        <input type="radio" id="travel4" name="travel" value="4">
-        <label for="travel4">4</label>
-        
-        <input type="radio" id="travel5" name="travel" value="5">
-        <label for="travel5">5 (Strongly Agree)</label>
-      </div>
-      <div>
-          <div class="questionTitle">Question 1</div>
-          <div class="question">You love to travel</div>
-          <input type="radio" id="travel1" name="travel" value="1">
-          <label for="travel1">1 (Strongly Disagree)</label>
-      
-          <input type="radio" id="travel2" name="travel" value="2">
-          <label for="travel2">2</label>
-      
-          <input type="radio" id="travel3" name="travel" value="3">
-          <label for="travel3">3</label>
-      
-          <input type="radio" id="travel4" name="travel" value="4">
-          <label for="travel4">4</label>
-          
-          <input type="radio" id="travel5" name="travel" value="5">
-          <label for="travel5">5 (Strongly Agree)</label>
-        </div>
-        <div>
-            <div class="questionTitle">Question 1</div>
-            <div class="question">You love to travel</div>
-            <input type="radio" id="travel1" name="travel" value="1">
-            <label for="travel1">1 (Strongly Disagree)</label>
-        
-            <input type="radio" id="travel2" name="travel" value="2">
-            <label for="travel2">2</label>
-        
-            <input type="radio" id="travel3" name="travel" value="3">
-            <label for="travel3">3</label>
-        
-            <input type="radio" id="travel4" name="travel" value="4">
-            <label for="travel4">4</label>
-            
-            <input type="radio" id="travel5" name="travel" value="5">
-            <label for="travel5">5 (Strongly Agree)</label>
-          </div>
+    <button id="submit-survey" type="submit">Submit</button>
+  </div>
 </body>
-<div>
-  <button id="submit-survey" type="submit">Submit</button>
-</div>
 
 </html>

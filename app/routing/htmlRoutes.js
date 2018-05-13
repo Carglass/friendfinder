@@ -9,10 +9,4 @@ module.exports = app => {
   app.get("/survey", (req, res) => {
     res.sendFile(path.join(__dirname, "./../public/survey.html"));
   });
-  app.get("/style.css", (req, res) => {
-    res.sendFile(path.join(__dirname, "./../public/style.css"));
-  });
-  app.get("/main.js", (req, res) => {
-    res.sendFile(path.join(__dirname, "./../public/main.js"));
-  });
 };
